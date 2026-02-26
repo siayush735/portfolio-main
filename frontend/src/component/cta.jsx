@@ -47,7 +47,7 @@ function cta() {
           API
         </li>
         <li data-aos="zoom-in" data-aos-delay="900">
-          Talwind CSS
+          Java
         </li>
       </ul>
       <ul className="text-white">

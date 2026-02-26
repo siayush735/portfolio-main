@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import project1 from "../assets/Ecommerce.png";
 import project2 from "../assets/Ai_assistant.png";
-import project3 from "../assets/weather app.png";
+import project3 from "../assets/bookmark.png";
 import project4 from "../assets/Dice-game.png";
+import project5 from "../assets/emplm.png"
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -40,6 +41,50 @@ function Project() {
       >
         These projects prove my high skills in web development.
       </p>
+      <div
+        className="w-full flex lg:flex-row-reverse flex-col justify-between items-center gap-20
+       mt-10 "
+      >
+        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
+          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
+          <h1
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            className="text-white font-semibold text-[32px] leading-10"
+          >
+            Employee Management System{" "}
+          </h1>
+          <button
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            className="text-red-500 text-[17px] font-poppins flex justify-center items-center gap-2"
+          >
+            See Details
+            <span>
+              <FaArrowRight />
+            </span>
+          </button>
+          <p className="text-white justify-center">
+           It is an app to store employee details, 
+           it have function to put,delete,edit employee data, 
+           fetch them by id or get full list in pages.
+           It connected to backend server mongodb.
+          </p>
+          <a href="https://github.com/siayush735/siayush735-mern-Employee-management-App">
+            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
+              Click for Github code
+            </p>
+          </a>
+        </div>
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="1200"
+          className="lg:w-[60%] w-full relative"
+        >
+          <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[270px] h-[200px] rounded-lg absolute top-[30px] -left-[30px]"></div>
+          <img src={project5} alt="" className="relative z-20 rounded-lg h-72" />
+        </div>
+      </div>
       <div
         className="w-full flex lg:flex-row flex-col justify-between items-center gap-20
        mt-10 "
@@ -124,7 +169,7 @@ function Project() {
           className="lg:w-[70%] w-full relative"
         >
           <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[270px] h-[200px] rounded-lg absolute top-[30px] -left-[60px]"></div>
-          <img src={project2} alt="" className="relative z-20 rounded-lg" />
+          <img src={project2} alt="" className="relative z-20 rounded-lg h-72" />
         </div>
       </div>
       <div
@@ -138,7 +183,7 @@ function Project() {
             data-aos-delay="600"
             className="text-white font-semibold text-[32px] leading-10"
           >
-            Real-Time weather app{" "}
+            Smart Bookmark app{" "}
           </h1>
           <button
             data-aos="zoom-in"
@@ -151,10 +196,11 @@ function Project() {
             </span>
           </button>
           <p className="text-white justify-center">
-            It is real time weather app made with the help of open weather API.
-            It can provide weather data of all cities in the world on one click.{" "}
+            I is a sytem to store url with its domain name, feature add,
+             delete and edit the url,connected with google superbase backend 
+            database server.I contain authentication through gmail login{" "}
           </p>
-          <a href="https://github.com/siayush735/weather-app.git">
+          <a href="https://github.com/siayush735/smart-bookmarks-app">
             <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
               Click for Github code
             </p>
@@ -182,7 +228,7 @@ function Project() {
             data-aos-delay="600"
             className="text-white font-semibold text-[32px] leading-10"
           >
-            Dice Game{" "}
+            Dice game{" "}
           </h1>
           <button
             data-aos="zoom-in"
@@ -196,7 +242,7 @@ function Project() {
           </button>
           <p className="text-white justify-center">
             A dice game app with all dynamic features of dice like random dice
-            rolling animation with backend mathematical function to generate
+            rolling animation with mathematical function to generate
             random score
           </p>
           <a href="https://github.com/siayush735/Dice-Game-with-reacts-js.git">
