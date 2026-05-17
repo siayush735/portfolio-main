@@ -12,7 +12,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus('sending');
     try {
-      const res = await fetch('http://localhost:4000/api/contact', {
+      const res = await fetch('https://portfolio-main-4x8n.onrender.com/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),

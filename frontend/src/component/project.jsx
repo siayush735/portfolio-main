@@ -68,7 +68,7 @@ function Project() {
            It is an app to store employee details, 
            it have function to put,delete,edit employee data, 
            fetch them by id or get full list in pages.
-           It connected to backend server mongodb.
+           It connected to databse mongodb.
           </p>
           <a href="https://github.com/siayush735/siayush735-mern-Employee-management-App">
             <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">

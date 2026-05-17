@@ -42,15 +42,54 @@ function services() {
           </div>
           <div className="flex flex-col justify-center items-start gap-3">
             <h1 className="text-white font-semibold text-[20px]">
+              Software Development and Engineering (code inbound llp - 6 month)
+            </h1>
+            <p className="text-gray-300 text-[17px] font-poppins">
+              {" "}
+              Developed scalable web modules using React.js and Node.js,
+              improving UI performance by approximately 25%, Performed
+              debugging, testing, and performance optimization in Microsoft
+              Azure, Refactored codebase to improve maintainability and overall
+              system efficiency.
+            </p>
+          </div>
+        </div>
+        <div
+          data-aos="zoom-in"
+          className="flex flex-col justify-center items-center gap-6"
+        >
+          <div className="bg-rose-500 rounded-full p-4 flex justify-center items-center transition-all duration-300 ease-in-out hover:scale-110">
+            <MdOutlineDesignServices className="fill-white size-9" />
+          </div>
+          <div className="flex flex-col justify-center items-start gap-3">
+            <h1 className="text-white font-semibold text-[20px]">
               Full stack web development
             </h1>
             <p className="text-gray-300 text-[17px] font-poppins">
-             fully trained on mern full stack development through online 9 monthinternship program on Skill Academy tesbook.
-             Done many projects based frontend and backend deveopment through react js,node js with database mongodb. 
+              fully trained on mern full stack development through online 9
+              monthinternship program on Skill Academy tesbook. Done many
+              projects based frontend and backend deveopment through react
+              js,node js with database mongodb.
             </p>
           </div>
-          
         </div>
+        <div
+          data-aos="zoom-in"
+          className="flex flex-col justify-center items-center gap-6"
+        >
+          <div className="bg-rose-500 rounded-full p-4 flex justify-center items-center transition-all duration-300 ease-in-out hover:scale-110">
+            <MdOutlineDesignServices className="fill-white size-9" />
+          </div>
+          <div className="flex flex-col justify-center items-start gap-3">
+            <h1 className="text-white font-semibold text-[20px]">Java</h1>
+            <p className="text-gray-300 text-[17px] font-poppins">
+              Certified by skill intership, All knowledge of java programming
+              language basically on oops concept, ALso done large number of
+              programming question on codechef through java.
+            </p>
+          </div>
+        </div>
+
         <div
           data-aos="zoom-in"
           className="flex flex-col justify-center items-center gap-6"
@@ -68,44 +107,6 @@ function services() {
               normalization, data presentation.
             </p>
           </div>
-        
-        </div>
-        <div
-          data-aos="zoom-in"
-          className="flex flex-col justify-center items-center gap-6"
-        >
-          <div className="bg-rose-500 rounded-full p-4 flex justify-center items-center transition-all duration-300 ease-in-out hover:scale-110">
-            <MdOutlineDesignServices className="fill-white size-9" />
-          </div>
-          <div className="flex flex-col justify-center items-start gap-3">
-            <h1 className="text-white font-semibold text-[20px]">
-              Java
-            </h1>
-            <p className="text-gray-300 text-[17px] font-poppins">
-              Certified by skill intership, All knowledge of java programming
-              language basically on oops concept, ALso done large number of
-              programming question on codechef through java.
-            </p>
-          </div>
-          
-        </div>
-        
-        <div
-          data-aos="zoom-in"
-          className="flex flex-col justify-center items-center gap-6"
-        >
-          <div className="bg-rose-500 rounded-full p-4 flex justify-center items-center transition-all duration-300 ease-in-out hover:scale-110">
-            <MdOutlineDesignServices className="fill-white size-9" />
-          </div>
-          <div className="flex flex-col justify-center items-start gap-3">
-            <h1 className="text-white font-semibold text-[20px]">Python</h1>
-            <p className="text-gray-300 text-[17px] font-poppins">
-              certified by upSkill campus, All knowledge of java programming
-              language basically on file handaling and excel concept, ALso done
-              large number of programming question on codechef through pythom.
-            </p>
-          </div>
-          
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import my_photo from "../assets/my_photo.png";
+import my_photo from "../assets/Ayush.jpg";
 import design from "../assets/design.png";
 import { FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
@@ -32,16 +32,16 @@ function Hero() {
           data-aos-delay="200"
           className="text-white   text-6xl font-semibold font-poppins"
         >
-           Web Developer,UI/UX Developer
+           Full Stack web developer/ Software Developer
         </h1>
         <p
           data-aos="zoom-in"
           data-aos-delay="400"
           className="text-gray-300 lg:text-x1 text-lg font-poppins"
         >
-          I am full stack web developer with experience of 3 years, I have full
+          I am full stack web developer with experience of 2 years, I have full
           skill and knowlegde in Frontend and Backend development, I proven
-          myself with many eye capturing projects.
+          my skills with many real time projects and problem solving skill. 
         </p>
         <a href="https://www.linkedin.com/in/ayush-kumar-88556128a/">
         <button
