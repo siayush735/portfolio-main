@@ -1,267 +1,166 @@
 import React, { useEffect } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaGithub } from "react-icons/fa";
+
 import project1 from "../assets/Ecommerce.png";
 import project2 from "../assets/Ai_assistant.png";
 import project3 from "../assets/bookmark.png";
 import project4 from "../assets/Dice-game.png";
-import project5 from "../assets/emplm.png"
-import { Link } from "react-router-dom";
+import project5 from "../assets/emplm.png";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function Project() {
+
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      delay: 200,
+      duration: 1000,
       once: false,
     });
   }, []);
+
+  const projects = [
+    {
+      title: "Employee Management System",
+      image: project5,
+      github:
+        "https://github.com/siayush735/siayush735-mern-Employee-management-App",
+      description:
+        "Employee management application with CRUD operations, pagination and MongoDB database integration.",
+    },
+
+    {
+      title: "Ecommerce Mobile App",
+      image: project1,
+      github: "https://github.com/siayush735/My-Portfolio",
+      description:
+        "Modern ecommerce UI with responsive layouts, sliders, animations and smooth shopping experience.",
+    },
+
+    {
+      title: "AI Virtual Assistant",
+      image: project2,
+      github: "https://github.com/siayush735/Virtual-AI-assistant.git",
+      description:
+        "Voice assistant using Speech Recognition and Speech Synthesis APIs to process user commands dynamically.",
+    },
+
+    {
+      title: "Smart Bookmark App",
+      image: project3,
+      github: "https://github.com/siayush735/smart-bookmarks-app",
+      description:
+        "Bookmark storage platform with authentication, URL management and Supabase backend integration.",
+    },
+
+    {
+      title: "Dice Game",
+      image: project4,
+      github: "https://github.com/siayush735/Dice-Game-with-reacts-js.git",
+      description:
+        "Interactive dice game featuring random animations and dynamic score generation using JavaScript.",
+    },
+  ];
+
   return (
-    <div
+    <section
       id="projects"
-      className="w-full lg:px-[200px] px-8 py-[60px] h-full flex
-    flex-col justify-between items-center gap-5"
+      className="w-full bg-black py-20 px-5 md:px-10 lg:px-24 overflow-hidden"
     >
-      <h1
-        data-aos="zoom-in"
-        className="text-4x1 uppercase text-white font-poppins font-semibold"
-      >
-        Projects
-      </h1>
-      <div
-        data-aos="zoom-in"
-        data-aos-delay="200"
-        className="bg-red-500 h-[3px] w-40"
-      ></div>
-      <p
-        data-aos="zoom-in"
-        data-sos-delay="400"
-        className="text-gray-300 text-1g text-center font-poppins lg:w-[70%] w-full"
-      >
-        These projects prove my high skills in web development.
-      </p>
-      <div
-        className="w-full flex lg:flex-row-reverse flex-col justify-between items-center gap-20
-       mt-10 "
-      >
-        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
-          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
-          <h1
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            className="text-white font-semibold text-[32px] leading-10"
-          >
-            Employee Management System{" "}
-          </h1>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="text-red-500 text-[17px] font-poppins flex justify-center items-center gap-2"
-          >
-            See Details
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-          <p className="text-white justify-center">
-           It is an app to store employee details, 
-           it have function to put,delete,edit employee data, 
-           fetch them by id or get full list in pages.
-           It connected to databse mongodb.
-          </p>
-          <a href="https://github.com/siayush735/siayush735-mern-Employee-management-App">
-            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
-              Click for Github code
-            </p>
-          </a>
-        </div>
-        <div
+
+      {/* Heading */}
+      <div className="text-center mb-20">
+
+        <h1
           data-aos="zoom-in"
-          data-aos-delay="1200"
-          className="lg:w-[60%] w-full relative"
+          className="text-white py-2 text-4xl md:text-5xl font-bold uppercase tracking-wide"
         >
-          <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[270px] h-[200px] rounded-lg absolute top-[30px] -left-[30px]"></div>
-          <img src={project5} alt="" className="relative z-20 rounded-lg h-72" />
-        </div>
-      </div>
-      <div
-        className="w-full flex lg:flex-row flex-col justify-between items-center gap-20
-       mt-10 "
-      >
-        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
-          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
-          <h1
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            className="text-white font-semibold text-[32px] leading-10"
-          >
-            Ecommerce Mobile App Development{" "}
-          </h1>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="text-red-500 text-[17px] font-poppins flex justify-center items-center gap-2"
-          >
-            See Details
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-          <p className="text-white justify-center">
-            Highly responsive website with eye capturing animation and hovering
-            with the help of react-slick,slider,AOS libraries. It contains high
-            display image of products with proper listing an animation{" "}
-          </p>
-          <a href="https://github.com/siayush735/My-Portfolio">
-            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
-              Click for Github code
-            </p>
-          </a>
-        </div>
-        <div
-          data-aos="zoom-in"
-          data-aos-delay="1200"
-          className="lg:w-[60%] w-full relative"
-        >
-          <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[270px] h-[200px] rounded-lg absolute top-[30px] -left-[30px]"></div>
-          <img src={project1} alt="" className="relative z-20 rounded-lg" />
-        </div>
-      </div>
-      <div
-        className="w-full flex lg:flex-row-reverse flex-col justify-between items-center gap-20
-       mt-20 "
-      >
-        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
-          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
-          <h1
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            className="text-white font-semibold text-[32px] leading-10"
-          >
-            AI Virtual Assistant{" "}
-          </h1>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="text-red-500  text-[17px] font-poppins flex justify-center items-center gap-2"
-          >
-            See Details
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-          <p className="text-white justify-center">
-            Made a project that use window spech recognition and utterance to
-            listen to tha client voice and transcript it into string format to
-            display result according to it after telling him. Open it on chrome
-          </p>
-          <a href="https://github.com/siayush735/Virtual-AI-assistant.git">
-            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
-              Click for Github code
-            </p>
-          </a>
-        </div>
+          Projects
+        </h1>
 
         <div
           data-aos="zoom-in"
-          data-aos-delay="1200"
-          className="lg:w-[70%] w-full relative"
-        >
-          <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[270px] h-[200px] rounded-lg absolute top-[30px] -left-[60px]"></div>
-          <img src={project2} alt="" className="relative z-20 rounded-lg h-72" />
-        </div>
-      </div>
-      <div
-        className="w-full flex lg:flex-row flex-col justify-between items-center gap-20
-       mt-10 "
-      >
-        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
-          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
-          <h1
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            className="text-white font-semibold text-[32px] leading-10"
-          >
-            Smart Bookmark app{" "}
-          </h1>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="text-red-500 text-[17px] font-poppins flex justify-center items-center gap-2"
-          >
-            See Details
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-          <p className="text-white justify-center">
-            I is a sytem to store url with its domain name, feature add,
-             delete and edit the url,connected with google superbase backend 
-            database server.I contain authentication through gmail login{" "}
-          </p>
-          <a href="https://github.com/siayush735/smart-bookmarks-app">
-            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
-              Click for Github code
-            </p>
-          </a>
-        </div>
-        <div className="lg:w-[60%] w-full relative">
-          <div className="bg-gray-900 lg:w-[600px] w-[300px] lg:h-[370px] h-[200px] rounded-lg absolute top-[30px] -left-[30px]"></div>
-          <img
-            src={project3}
-            data-aos="zoom-in"
-            data-aos-delay="1200"
-            alt=""
-            className="relative z-20 rounded-lg"
-          />
-        </div>
-      </div>
-      <div
-        className="w-full flex lg:flex-row-reverse flex-col justify-between items-center gap-20
-       mt-20 "
-      >
-        <div className="lg:w-[40%] w-full flex flex-col justify-center items-start gap-6">
-          <h1 className="flex flex-col justify-center items-start gap-4"></h1>
-          <h1
-            data-aos="zoom-in"
-            data-aos-delay="600"
-            className="text-white font-semibold text-[32px] leading-10"
-          >
-            Dice game{" "}
-          </h1>
-          <button
-            data-aos="zoom-in"
-            data-aos-delay="1000"
-            className="text-red-500  text-[17px] font-poppins flex justify-center items-center gap-2"
-          >
-            See Details
-            <span>
-              <FaArrowRight />
-            </span>
-          </button>
-          <p className="text-white justify-center">
-            A dice game app with all dynamic features of dice like random dice
-            rolling animation with mathematical function to generate
-            random score
-          </p>
-          <a href="https://github.com/siayush735/Dice-Game-with-reacts-js.git">
-            <p className="text-green-400 hover:text-blue-400 hover:underline md:2px">
-              Click for Github code
-            </p>
-          </a>
-        </div>
+          className="w-28 h-1 bg-red-500 mx-auto mt-5 rounded-full"
+        ></div>
 
-        <div
+        <p
           data-aos="zoom-in"
-          data-aos-delay="1200"
-          className="lg:w-[70%] w-full relative"
+          className="text-gray-400 text-base md:text-lg mt-6 pb-2 max-w-3xl mx-auto leading-8"
         >
-          <div className="bg-gray-900 lg:w-[500px] w-[300px] lg:h-[400px] h-[200px] rounded-lg absolute top-[30px] -left-[60px]"></div>
-          <img src={project4} alt="" className="relative z-20 rounded-lg" />
-        </div>
+          These projects showcase my frontend, backend and full stack
+          development skills with responsive and modern UI design.
+        </p>
       </div>
-    </div>
+
+      {/* Projects */}
+      <div className="flex flex-col gap-24">
+
+        {projects.map((project, index) => (
+
+          <div
+            key={index}
+            className={`grid lg:grid-cols-2 gap-12 items-center p-3 ${
+              index % 2 !== 0 ? "lg:[&>*:first-child]:order-2" : ""
+            }`}
+          >
+
+            {/* Image Section */}
+            <div
+              data-aos="zoom-in"
+              className="relative group"
+            >
+
+              {/* Background Effect */}
+              <div className="absolute inset-0 bg-red-500/10 rounded-3xl blur-2xl group-hover:bg-red-500/20 transition-all duration-500"></div>
+
+              {/* Card */}
+              <div className="relative bg-[#161616] rounded-3xl p-4 border border-gray-800 shadow-2xl">
+
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto rounded-2xl object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Text Section */}
+            <div
+              data-aos="fade-up"
+              className="flex flex-col gap-6"
+            >
+
+              <h2 className="text-white text-3xl md:text-4xl font-bold leading-tight">
+                {project.title}
+              </h2>
+
+              <button className="text-red-500 flex items-center gap-3 text-lg hover:gap-5 transition-all duration-300 w-fit">
+
+                See Details
+
+                <FaArrowRight />
+              </button>
+
+              <p className="text-gray-400 text-base md:text-lg leading-8">
+                {project.description}
+              </p>
+
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-3 text-green-400 hover:text-blue-400 transition-all duration-300 text-lg w-fit"
+              >
+
+                <FaGithub />
+
+                Github Code
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 

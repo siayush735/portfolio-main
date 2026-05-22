@@ -15,10 +15,10 @@ function Hero() {
   }, []);
 
   return (
-    <div
-      id="hero"
-      className="w-full lg:px-[200px] px-8 lg:pb-[80px] pb-5 lg:pt-[50px] pt-[120px] h-full flex lg:flex-row flex-col justify-between items-center gap-[80px]"
-    >
+   <div
+  id="hero"
+  className="w-full lg:px-[120px] px-5 py-[60px] flex lg:flex-row flex-col-reverse justify-between items-center gap-16 overflow-hidden"
+>
       <div className="lg:w-3/5 w-full flex flex-col justify-center items-start gap-8">
         <h1
           data-aos="zoom-in"
@@ -28,12 +28,10 @@ function Hero() {
           Hi,I am Ayush
         </h1>
         <h1
-          data-aos="zoom-in"
-          data-aos-delay="200"
-          className="text-white   text-6xl font-semibold font-poppins"
-        >
-           Full Stack web developer/ Software Developer
-        </h1>
+  className="text-white text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight"
+>
+  Full Stack Web Developer / Software Developer
+</h1>
         <p
           data-aos="zoom-in"
           data-aos-delay="400"
@@ -57,21 +55,25 @@ function Hero() {
         data-aos-delay="600"
         className="lg:w-2/5 w-full relative mb-20"
       >
-        <div
-          className="bg-[#2f2f2f] lg:w-[400px] w-full lg:h-[400px]
-         h-[400px] rounded-lg absolute top-[30px] -left-[30px]"
-        >
-          <img
-            src={my_photo}
-            alt=""
-            className="lg:w-[500px] w-full lg:h-[450px] h-[450px] rounded-lg relative z-20"
-          />
-          <img
-            src={design}
-            alt=""
-            className="absolute -top-7 -right-7 rounded-1g z-10"
-          />
-        </div>
+      <div
+  data-aos="zoom-in"
+  data-aos-delay="600"
+  className="lg:w-[40%] w-full flex justify-center relative"
+>
+  <div className="bg-[#2f2f2f] w-[280px] sm:w-[350px] lg:w-[400px] h-[300px] sm:h-[380px] lg:h-[400px] rounded-lg absolute top-5 left-2 sm:left-5"></div>
+
+  <img
+    src={my_photo}
+    alt=""
+    className="w-[280px] sm:w-[350px] lg:w-[400px] h-[320px] sm:h-[400px] lg:h-[450px] object-cover rounded-lg relative z-20"
+  />
+
+  <img
+    src={design}
+    alt=""
+    className="absolute -top-6 right-0 z-10 w-20 sm:w-28"
+  />
+</div>
       </div>
     </div>
   );
