@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaArrowRight, FaGithub } from "react-icons/fa";
 
-import project1 from "../assets/Ecommerce.png";
+import project1 from "../assets/shcms.png";
 import project2 from "../assets/Ai_assistant.png";
 import project3 from "../assets/bookmark.png";
 import project4 from "../assets/Dice-game.png";
@@ -30,11 +30,11 @@ function Project() {
     },
 
     {
-      title: "Ecommerce Mobile App",
+      title: "Role based school task management sytem",
       image: project1,
-      github: "https://github.com/siayush735/My-Portfolio",
+      github: "https://github.com/siayush735/school-dashboard",
       description:
-        "Modern ecommerce UI with responsive layouts, sliders, animations and smooth shopping experience.",
+        "It is mern role based task management system, with mongodb database, jwt authentication,",
     },
 
     {
